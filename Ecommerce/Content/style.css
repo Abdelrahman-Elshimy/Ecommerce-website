@@ -1,0 +1,271 @@
+﻿* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*Main-color: #717FE0;*/
+.top_bar {
+    background: #333;
+    z-index: 3;
+    /*padding: 10px 0;*/
+}
+    .top_bar button {
+        background: transparent;
+        color: #b2b2b2;
+        border: none;
+        padding: 5px 0;
+    }
+.top_bar button:focus {
+    border: none;
+}
+.top_bar .dropdown-menu {
+    z-index: 3;
+    background: #333;
+    min-width: auto;
+}
+    .top_bar .dropdown-menu a {
+        color: #b2b2b2;
+    }
+.top_bar .dropdown-menu a:not(:last-child) {
+    border-bottom: 1px solid #666;
+}
+    .top_bar .d-flex > div {
+        padding-right: 20px;
+    }
+    .top_bar .d-flex > div:not(:first-child) {
+        padding: 0px 20px;
+        border-left: 1px solid #666;
+    }
+    .top_bar ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        align-items: center;
+    }
+        .top_bar ul li a {
+            padding: 0;
+            color: #b2b2b2;
+            text-decoration: none;
+            transition: .6s;
+        }
+            .top_bar ul li a:hover {
+                color: #717FE0
+            }
+            .top_bar ul li a:first-child {
+                margin: 0px 10px;
+            }
+        /*navbar*/
+        #nav_shop {
+            transition: .6s;
+            top: 0px;
+        }
+.nav_online {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    transition: .6s;
+}
+    .nav_online .navbar-light .navbar-nav .nav-link {
+        color: #333;
+        font-size: 1REM;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+.nav_online .navbar-light .navbar-nav .active > .nav-link {
+    color: #717FE0
+}
+/*slider*/
+.home-demo .item {
+    position: relative;
+}
+
+
+.home-demo h2 {
+    color: #fff;
+    text-align: center;
+    padding: 5rem 0;
+    margin: 0;
+    font-style: italic;
+    font-weight: 300;
+}
+.home-demo .item .content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.home-demo .item .content-image img {
+    min-width: 100%;
+}
+
+.home-demo .owl-nav {
+    display: none;
+}
+.home-demo .owl-dots {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.home-demo .content-txt h3 {
+    font-weight: 500;
+    letter-spacing: .3rem;
+    color: #333;
+}
+.home-demo .content-txt p {
+    color: #000;
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+.home-demo .shop_btn{
+    margin-top: 30px;
+}
+.home-demo .shop_btn a {
+    background-color: #717FE0;
+    border-radius: 20px;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*categories*/
+.cats {
+    margin-top: 30px;
+}
+.cats .row > div {
+    margin-bottom: 20px;
+}
+.cats .row > div .content-all {
+    position: relative;
+    border: 1px solid #ccc;
+}
+.cats .row > div img {
+    max-width: 100% !important;
+}
+.cats .row > div .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    transition: .6s;
+    color: #000;
+}
+.cats .row > div:hover .content {
+    background: rgba(113,127,224, .8);
+    color: #fff;
+}
+.cats .row > div:hover .content a {
+    display: block;
+}
+.cats .row > div .content a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid #fff;
+    width: max-content;
+    transition: .6s;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    /*display: none;*/
+}
+.cats .row > div .content h2 {
+    font-weight: 600;
+}
+
+/*products_overview*/
+.products_overview {
+    margin-top: 70px;
+}
+.products_overview h2 {
+    font-weight: bold;
+}
+.products_overview .nav-tabs {
+    border-bottom: none !important;
+}
+.products_overview .nav-tabs .nav-link {
+    padding: 0 !important;
+    margin-right: 50px;
+    font-size: 18px !important;
+    color: #8F918F;
+    border-bottom: 1px solid transparent !important;
+}
+.products_overview .nav-tabs .nav-link:hover,
+.products_overview .nav-tabs .nav-link:focus {
+    font-size: 18px !important;
+    padding: 0 !important;
+}
+.products_overview .nav-tabs .nav-link.active:focus,
+.products_overview .nav-tabs .nav-link.active:hover {
+    font-size: 18px !important;
+    border-bottom: 1px solid #333333 !important;
+    padding: 0 !important;
+}
+.products_overview .nav-tabs .nav-link.active {
+    border: none !important;
+    font-size: 18px !important;
+    color: #333333;
+    border-bottom: 1px solid #333333 !important;
+    padding: 0 !important;
+}
+.products_overview .nav-tabs .nav-link:focus, .products_overview .nav-tabs .nav-link:hover {
+    border: 1px solid transparent !important;
+    border-bottom: 1px solid transparent !important;
+
+    padding: 0 !important;
+}
+.products_overview .tab-content .row > div h4 {
+    color: #999;
+    font-size: 18px;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.products_overview .all-products .content-image {
+    position: relative;
+    background: #f00;
+    overflow: hidden;
+}
+.products_overview .all-products .content-image .show-details {
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: .6s;
+}
+.products_overview .all-products .content-image .show-details a {
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #717FE0;
+    text-decoration: none;
+    transition: .6s;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.products_overview .all-products .content-image .show-details a:hover {
+    background: #717FE0;
+    color: #fff;
+}
+.products_overview .all-products .content-image img {
+    transition: .6s;
+}
+.products_overview .all-products .row > div:hover .content-image .show-details {
+    bottom: 10px;
+}
+.products_overview .all-products .row > div:hover img {
+    -ms-transform: scale(1.1); /* IE 9 */
+    transform: scale(1.1); /* Standard syntax */
+}

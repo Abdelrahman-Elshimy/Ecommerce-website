@@ -1,0 +1,152 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<section class="slider">
+    <!-- Set up your HTML -->
+    <div class="home-demo">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="content-image">
+                    <img src="~/images/slide1.jpg" />
+                </div>
+                <div class="content">
+                    <div class="container">
+                        <div class="content-txt">
+                            <h3 class="wow bounceInLeft">Women New-Season</h3>
+                            <p class="wow bounceInRight">Jackets & Coats</p>
+                        </div>
+                        <div class="shop_btn wow bounceInDown">
+                            <a href="./Product">
+                                Shop Now
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="content-image">
+                    <img src="~/images/slide2.jpg" />
+                </div>
+                <div class="content">
+                    <div class="container">
+                        <div class="content-txt">
+                            <h3>Men collection 2021</h3>
+                            <p>New Season</p>
+                        </div>
+                        <div class="shop_btn">
+                            <a href="./Product">
+                                Shop Now
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cats">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 wow bounceInLeft">
+                <div class="content-all">
+                    <img src="~/Images/categories/women.jpg" />
+                    <div class="content">
+                        <div class="content-txt">
+                            <h2>Women</h2>
+                            <p>Spring 2021</p>
+                        </div>
+                        <a href="">
+                            Shop Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="content-all">
+                    <img src="~/Images/categories/man.jpg" />
+                    <div class="content">
+                        <div class="content-txt">
+                            <h2>Man</h2>
+                            <p>Spring 2021</p>
+                        </div>
+                        <a href="">
+                            Shop Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 wow bounceInRight">
+                <div class="content-all">
+                    <img src="~/Images/categories/accessories.jpg" />
+                    <div class="content">
+                        <div class="content-txt">
+                            <h2>Accessories</h2>
+                            <p>New Trend</p>
+                        </div>
+                        <a href="">
+                            Shop Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+@*products section overview*@
+
+<section class="products_overview mt-5">
+    <div class="container">
+        <h2 class="pt-3 mb-4">PRODUCT OVERVIEW</h2>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">All Products</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Women</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Man</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="shoes-tab" data-toggle="tab" href="#shoes" role="tab" aria-controls="shoes" aria-selected="false">Shoes</a>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="watch-tab" data-toggle="tab" href="#watch" role="tab" aria-controls="watch" aria-selected="false">Watches</a>
+            </li>
+            </li>
+        </ul>
+        <div class="tab-content mt-4" id="myTabContent">
+            <div class="tab-pane all-products fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="content">
+                            <div class="content-image">
+                                <img src="~/Images/products/product1.jpg" style="max-width: 100%;" />
+                                <div class="show-details">
+                                    <a href="">
+                                        Quick View
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between mt-2">
+                                <h4>Esprit Ruffle Shirt</h4>
+                                <p>
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </p>
+                            </div>
+                            <p>93.98$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">2</div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">3</div>
+            <div class="tab-pane fade" id="shoes" role="tabpanel" aria-labelledby="shoes-tab">4</div>
+            <div class="tab-pane fade" id="watch" role="tabpanel" aria-labelledby="watch-tab">5</div>
+        </div>
+    </div>
+</section>
